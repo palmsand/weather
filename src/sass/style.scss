@@ -1,0 +1,171 @@
+/** reset **/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+img{max-width:100%;}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+} 
+
+/** main **/ 
+
+h1 {
+	font-size: 45px;
+	color: #fff;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-align: center;
+	padding: 1em 0 0.4em 0;
+}
+
+/** animation **/
+
+@keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 90000%;
+    }
+}
+
+@-webkit-keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 90000%;
+    }
+}
+
+.layout-main{
+    background-image: url('../images/weatherbg.jpg');
+    background-repeat: repeat-x;
+    animation: slideleft 40000s infinite linear;
+    -webkit-animation: slideleft 40000s infinite linear;
+    background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover; 
+    background-attachment: fixed;
+    position: relative;
+	min-height: 100vh;
+}
+
+.top-wrapper {
+    background: rgba(0, 0, 0, 0.7);
+	min-height: 100vh;
+}
+
+/** header **/
+
+span.fa {
+    color: #222;
+    width: 22px;
+}
+
+.main-icon {
+    text-align: center;
+}
+
+.main-icon span.fa{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+a {
+    color: #585858;
+    margin: 0em;
+}
+
+.header-main {
+	max-width: 550px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 999;
+	padding: 3em 2em;
+	background: rgba(255, 255, 255, 0.04);
+	-webkit-box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+
+::-webkit-input-placeholder{
+    color: #333!important;
+}
+
+.main-card {
+    color: #fff;
+    font-size: 14px;
+}
+
+.child2 {
+    color: black;
+}
+
+.new-icon{
+    color: white;
+    display: inline-block;
+}
+
+.search-form .search-submit {
+	background-color: inherit;
+	border: none;
+}
+
+.wrapper-forecast {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.today {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.new-forecast {
+    margin-top: 15px;
+}
+
+.current {
+    display: block;
+    
+}
+
+// .dark-theme {
+//     .layout-main{
+//         background-image: url('../images/weatherbg.jpg');
+// }
+
+// .header-left-bottom button.btn {
+//     background: #007cc0;
+//     color: #fff;
+//     font-size: 15px;
+//     text-transform: uppercase;
+//     padding: .8em 2em;
+//     letter-spacing: 1px;
+//     transition: 0.5s all;
+//     -webkit-transition: 0.5s all;
+//     -moz-transition: 0.5s all;
+//     -o-transition: 0.5s all;
+//     display: inline-block;
+//     cursor: pointer;
+//     outline: none;
+//     border: none;
+// 	width: 100%;
+// }
